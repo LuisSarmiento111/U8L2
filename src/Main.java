@@ -3,10 +3,19 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         int[][] arr = new int[3][3];
-        arr[0] = new int[]{1, 2, -1};
+        arr[0] = new int[]{1, 2, 3};
         arr[1] = new int[]{1, 2, 3};
         arr[2] = new int[]{1, 2, 3};
         System.out.println(Main.columnsDuplicates(arr));
+        arr[0] = new int[]{1, 2, 3};
+        arr[1] = new int[]{1, 2, 1};
+        arr[2] = new int[]{1, 2, 3};
+        System.out.println(Main.columnsDuplicates(arr));
+        arr[0] = new int[]{198, 123, 198};
+        arr[1] = new int[]{52, 213, 513};
+        arr[2] = new int[]{171, 261, 233};
+        System.out.println(Main.columnsDuplicates(arr));
+        int [][] arr2 = new int[3][10];
     }
 
     public static boolean columnsDuplicates(int[][] arr) {
